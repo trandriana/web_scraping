@@ -14,9 +14,6 @@ CREATE TABLE City (
     PRIMARY KEY (CityId)
 );
 
-SELECT *
-FROM City;
-
 /***************************
 Creating the table 'country'
 ***************************/
@@ -27,9 +24,6 @@ CREATE TABLE country (
     PRIMARY KEY (CountryId),
     FOREIGN KEY (CityId) REFERENCES City (CityId) 
 );
-
-SELECT *
-FROM country;
 
 /***************************
 Creating the table 'geolocation'
@@ -42,9 +36,6 @@ CREATE TABLE geolocation (
     PRIMARY KEY (LocId),
     FOREIGN KEY (CityId) REFERENCES City (CityId) 
 );
-
-SELECT *
-FROM geolocation;
 
 /***************************
 Creating the table 'population'
