@@ -48,9 +48,3 @@ CREATE TABLE population (
     PRIMARY KEY (FactId),
     FOREIGN KEY (CityId) REFERENCES City (CityId) 
 );
-
-SELECT *
-FROM city
-LEFT JOIN country USING(CityID)
-LEFT JOIN geolocation USING(CityID)
-LEFT JOIN population USING(CityID);
