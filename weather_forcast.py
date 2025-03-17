@@ -4,8 +4,8 @@ import requests
 def weather_forcast(lat, lon, API_key):
     '''
     Filename: weather_forcast.py
-    Description: This function extract 5 Day/ 3 Hour weather forcast from the Weather API 'https://openweathermap.org/api'
-    Remark: Get an API key from https://openweathermap.org. Save it to the file weather_api_key.env.
+    Description: This function extracts 5 Day / 3 Hour weather forcast from the Weather API 'https://openweathermap.org/api'
+    Remark: You need to get an API key from https://openweathermap.org, an save it to the file weather_api_key.env.
     Author: Tsiry Avisoa Randrianasolo
     Syntax: weather_df = weather_forcast(latitude, longitude)
     Input: 
